@@ -64,13 +64,114 @@ Final Project Idea</a></h2>
 
  <a href=""><h2>Designing and Creating Components</h2>
  <h2> </h2>
- The first step was to create all of the components or parts that I needed to create the Project. I used the online program known as Fusion 360 in order to virtually design all of the components I needed. 
-<img src="./Autodesk_Fusion360-2017_Lockup-1280x720.jpg" class="img-responsive margin" style="width:50%" alt="Sew">
+ The first step was to create all of the components or parts that I needed to create the Project. 
+<img src="./Autodesk_Fusion360-2017_Lockup-1280x720.jpg" class="img-responsive margin" style="width:30%" alt="Sew">
+<h2> </h2>
+<h4>Shown below are the 3D Pieces:</h4>
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Sketches for the Axel Wheels are shown above. You can download those 3D print files <a href="">here</a></h6>
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Sketches for Door Weight Balance. You can download those files <a href="">here</a></h6>
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Sketches for the Safe's Door. You can download those files <a href="">here</a></h6> 
+<h2> </h2>
+These 3D Components were printed using a Prusa Slicer 3D Printer
+<h2> </h2>
+Other components were created using Lasercutted pieces of wood attached together (using Hot Glue)
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Left Pavement</h6>
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Safe Container</h6>
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h6>Flooring</h6>
+<h2> </h2>
+The project used Motors, Washers and Carboard to assist in creating the Electronic Safe. Further more, black spray paint was used many of the Lasercut Components (as seen above). 
+
+</a></div>
 <h2> </h2>
 
 
+<div class="content" style="padding:2px 6px 4px 6px; color: #B22222; font-color: #FFD700; border: #B22222 2px solid">
+
+ <a href=""><h2>Electronics</h2>
+ 	<h2> </h2>
+ There are 3 main electronic bodies reponsible for 3 separate electronic functions of the Electronic Safe. 
+ <h2> </h2>
+ <img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+ <img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+ <img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+ The first one, or the Long Breadboard serves as the Input Board for the Code of the Safe. When the Huzzah board, or the disattachable electronic board on the breadboard receives a signal from an online database (see more on the Coding section below), it sends a signal to the series of buttons, that if pressed, send signal from the Breadboard to the Metroboard. 
+ <h2> </h2>
+ The second system is the Accelerometer Breadboard. This Accelerometer device that is mounted on the Breadboard sends information of the rotational position of the board to the Metro board that it shares connection with the Long Breadboard. 
+ <h2> </h2>
+ The third is the Anti-Theft System of the Safe. The breadboard of the system is attached to its own metroboard. It consists of a Buzzer, a capacitance sensor and an LED Strip. The system is designed to start ringing its buzzer and make its LED Strip light up if it ever senses an electric charge caused by the human finger (touching the metal part of the sensor). Essentially, if anyone tries to manually open the Safe, an visual and sound alarm will go off. This Process is asisted by Coding. Aluminum foil was attached to the Safe's door, as well as a wire going from the circuit to the Door. This wire will sense the capacitance charge in the Aluminum Foil. 
+ <h2> </h2>
+</a></div>
+
+<h2> </h2>
+<div class="content" style="padding:2px 6px 4px 6px; color: #B22222; font-color: #FFD700; border: #B22222 2px solid">
+<a href=""><h2>Arduino Codes</h2>
+<h2> </h2>
+The first two systems are interconnected, but use separate code. The first system, uses a simple Firebase Code that instructs the Huzzah board to turn on when the online database (Firebase Database) instructs it to (accomplished by in person input). 
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+The Second Code commands two motors, when both the correct sequence of buttons are pressed as well as the Accelerometer board is tilted at the right angle, to start executing their specific functions, either to work together to open and close the Safe. The code also commands two LED lights to turn on
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+The third and final code commands the buzzer and LED strip connected to its own independent Breadboard and Metro Board, to set off, when it senses a capactitative charge time of more than 2000 (caused by touching the Capacitance Sensor).
+<h2> </h2>
+</a></div>
  
- 
+ <h2> </h2>
+ <div class="content" style="padding:2px 6px 4px 6px; color: #B22222; font-color: #FFD700; border: #B22222 2px solid">
+<a href=""><h2>Assembling and Using my Project:</h2>
+<h2> </h2>
+Two N20 Motors were used for this project as part of the machinery. They were both connected to washers that were then attached to the 3D Printed Wheels. 
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+The 3D printed Door was wrapped in aluminum foil to act as a Capacitance Sensor. The other part of the Sensor being the brown metal sheet.
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+The Motor bound Wheels and the Aluminum covered Door connected (using threading) in line:
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+Walls were added to the Safe, as well as pencils attached to the buttons on the Long Breadboard, used for pressing the code. Additionally, two Dark Blue LEDs were placed, that would shine through the back opening of the Safe Container.
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2> 
+Final Project Upon Completion:
+<img src="." class="img-responsive margin" style="width:50%" alt="Sew">
+<h2> </h2>
+
+Creating and Using an Electronic Safe: 
+
+
+
+<h6>Skip to _:__ to see it working</h6>
+<h2> </h2>
+</a></div>
 
 
 
